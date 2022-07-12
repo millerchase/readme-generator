@@ -28,6 +28,18 @@ function promptUser() {
   return inquirer.prompt([
     {
       type: 'input',
+      name: 'username',
+      message: 'Enter GitHub username. (Required)',
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your GitHub username.');
+        }
+      }
+    },
+    {
+      type: 'input',
       name: 'title',
       message: 'What is the title of your project? (Required)',
       validate: (nameInput) => {
@@ -51,6 +63,11 @@ function promptUser() {
       }
     },
     {
+      type: 'input',
+      name: 'deployedLink',
+      message: 'Enter link to deployed application if applicable'
+    },
+    {
       type: 'list',
       name: 'license',
       message: 'Would you like to add a licenses?',
@@ -66,6 +83,11 @@ function promptUser() {
         'unlicense',
         'WTFPL'
       ]
+    },
+    {
+      type: 'input',
+      name: 'name',
+      message: 'Enter your name to add to copyright?'
     },
     {
       type: 'input',
@@ -88,6 +110,11 @@ function promptUser() {
       message: 'Provide some information on how to test application:'
     },
     {
+      type: 'input',
+      name: 'email',
+      message: 'Enter contact email if applicable'
+    },
+    {
       type: 'confirm',
       name: 'tableOfContent',
       message: 'Would you like to add a table of content?',
@@ -97,11 +124,12 @@ function promptUser() {
 }
 
 // TODO: Create a function to initialize app
-promptUser().then((data) => {
-  console.log(data);
-  writeToFile('./dist/README.md', generateMarkdown(data));
-});
-function init() {}
+function init() {
+  promptUser().then((data) => {
+    console.log(data);
+    writeToFile('./dist/README.md', generateMarkdown(data));
+  });
+}
 
 // Function call to initialize app
 init();
