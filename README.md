@@ -23,8 +23,6 @@ ___
 4. [Questions](#questions)
 
 ___
-    
-[Untitled_ Jul 27, 2022 9_53 PM.webm](https://user-images.githubusercontent.com/99565080/181414075-b7c7ea95-72d6-4dcc-9251-d5c0f27ed9af.webm)
 
 
 ## Installation
@@ -38,6 +36,8 @@ Click on the 'Code' button above and select your preferred method of cloning. Th
 
 Navigate to your cloned repository and run the command `npm start`, then simply answer the prompts. Your newly created README file will appear in the projects 'dist' folder.
 
+    
+[Untitled_ Jul 27, 2022 9_53 PM.webm](https://user-images.githubusercontent.com/99565080/181414075-b7c7ea95-72d6-4dcc-9251-d5c0f27ed9af.webm)
 
 ## License
 
