@@ -38,7 +38,7 @@ ${data.usage}
 ${data.contributing}
 
 
-## Tests
+## Testing
 
 ${data.tests}
 

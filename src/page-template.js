@@ -391,13 +391,12 @@ function deployedLinkHandler(link) {
 
 function questionsSectionHandler(username, email) {
   if (!email) {
-    return `For any additional questions:
-Find me on GitHub at [${username}](https://github.com/${username})`;
+    return `For any additional questions, find me on GitHub @ [${username}](https://github.com/${username})`;
   }
 
   return `For any additional questions:
 
-* Find me on GitHub at [${username}](https://github.com/${username})
+* Find me on GitHub @ [${username}](https://github.com/${username})
 
 * Or contact me directly at: ${email}`;
 }
