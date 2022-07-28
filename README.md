@@ -18,13 +18,9 @@ ___
 
 2. [Usage](#usage)
 
-3. [How to contribute](#how-to-contribute)
+3. [License](#license)
 
-4. [Testing](#testing)
-
-5. [License](#license)
-
-6. [Questions](#questions)
+4. [Questions](#questions)
 
 ___
     
@@ -39,7 +35,7 @@ Click on the 'Code' button above and select your preferred method of cloning. Th
 
 ## Usage
 
-Navigate to your cloned repository and run the command `npm start`, then simply answer the prompts. Your newly created README file will appear the projects 'dist' folder.
+Navigate to your cloned repository and run the command `npm start`, then simply answer the prompts. Your newly created README file will appear in the projects 'dist' folder.
 
 
 ## License
